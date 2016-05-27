@@ -5,8 +5,10 @@
         <input [(ngModel)]="query" placeholder="type in search term">
     </div>
 </div>
-<ul class="artistlist cf">
-    <li (click)="showArtist(item);query='';" class="artist cf" #artistContainer *ngFor="#item of artists">
+<ul *ngIf="query" class="artistlist cf">
+    <li (click)="showArtist(item); query='';" 
+    class="artist cf" #artistContainer 
+    *ngFor="#item of (artists) | find: query">
         <artist-item class="content" [artist]=item></artist-item>
     </li>
 </ul>

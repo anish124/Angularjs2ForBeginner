@@ -25,7 +25,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Component({
                         selector: 'artist-item',
                         templateUrl: 'partials/artistitem.html',
-                        styles: ["\n  img {\n    display: block;\n    float: left;\n    width: 60px;\n    -webkit-border-radius: 12px;\n    border-radius: 12px;\n    margin-right: 10px;\n    margin-bottom: 10px;\n  }\n  ", 'h2 { margin-top: 0;}'],
+                        styleUrls: ['css/app-items.css'],
                         inputs: ['artist']
                     }), 
                     __metadata('design:paramtypes', [])

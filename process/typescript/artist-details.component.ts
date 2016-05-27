@@ -1,15 +1,10 @@
 import {Component} from 'angular2/core';
-
-interface Artist {
-    name: string;
-    shortname: string;
-    reknown: string;
-    bio: string;
-}
+import {Artist} from './artist';
 
 @Component({
   selector: 'artist-details',
   templateUrl: 'partials/artistdetails.html',
+  styleUrls : ['css/app-details.css'],
   inputs: ['artist']
 })
 
