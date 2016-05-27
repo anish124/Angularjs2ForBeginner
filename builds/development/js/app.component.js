@@ -23,8 +23,9 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.name = "ZIN";
                     this.artists = ['Barot Bellingham', 'Hillary Post'];
                 }
-                AppComponent.prototype.onClick = function (myName) {
+                AppComponent.prototype.onClick = function (myName, myElement) {
                     this.name = myName;
+                    myElement.style.backgroundColor = "#FECE4E";
                 };
                 AppComponent.prototype.addArtist = function (myArtist) {
                     this.artists.push(myArtist);
@@ -32,7 +33,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        templateUrl: 'partials/app.html'
+                        templateUrl: 'partials/app.html',
+                        styles: []
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

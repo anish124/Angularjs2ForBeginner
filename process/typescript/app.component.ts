@@ -2,7 +2,8 @@ import {Component} from 'angular2/core';
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'partials/app.html'
+    templateUrl: 'partials/app.html',
+    styles:[]
 })
 
 export class AppComponent {
@@ -11,9 +12,10 @@ export class AppComponent {
 
     artists = ['Barot Bellingham', 'Hillary Post'];
     
-    onClick(myName)
+    onClick(myName, myElement)
     {
          this.name = myName;
+         myElement.style.backgroundColor="#FECE4E";
     }
     addArtist(myArtist)
     {
